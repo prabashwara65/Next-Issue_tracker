@@ -3,8 +3,8 @@ import "@radix-ui/themes/styles.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "./Navbar";
-import { Theme } from "@radix-ui/themes";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,12 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme>
-          <Navbar />
-          <main> {children}</main>
-        </Theme>
-      </body>
-    </html>
+    <body>
+      {/* Navbar is displayed at the top */}
+      <Navbar />
+      
+      {/* Page content will render below the navbar */}
+      <main className="mt-4">
+        {children}
+      </main>
+      <Footer />
+    </body>
+  </html>
   );
 }

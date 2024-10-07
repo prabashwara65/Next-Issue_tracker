@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const IssuesPage = () => {
   return (
-    <div>
+    <div className='min-h-screen'>
       <Button><Link href="issues/new">New Issure</Link></Button>
     </div>
   )
