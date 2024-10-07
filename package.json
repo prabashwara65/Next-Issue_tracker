@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "prisma": "^5.3.1",
     "react-icons": "^4.11.0"
   }
 }
