@@ -12,7 +12,7 @@ datasource db {
 
 model Issure {
   id          Int      @id @default(autoincrement())
-  titile      String   @db.VarChar(255)
+  title       String   @db.VarChar(255)
   description String   @db.Text
   status      Status   @default(OPEN)
   createdAt   DateTime @default(now())

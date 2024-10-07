@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client'
-import ""
 
 //use singleton design patterns 
 const prismaClientSingleton = () => {

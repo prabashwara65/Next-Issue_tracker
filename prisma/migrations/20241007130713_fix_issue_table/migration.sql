@@ -1,7 +1,16 @@
+/*
+  Warnings:
+
+  - You are about to drop the `Issue` table. If the table is not empty, all the data it contains will be lost.
+
+*/
+-- DropTable
+DROP TABLE `Issue`;
+
 -- CreateTable
 CREATE TABLE `Issure` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `titile` VARCHAR(255) NOT NULL,
+    `title` VARCHAR(255) NOT NULL,
     `description` TEXT NOT NULL,
     `status` ENUM('OPEN', 'IN_PROGRESS', 'CLOSED') NOT NULL DEFAULT 'OPEN',
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
